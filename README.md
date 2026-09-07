@@ -1,13 +1,13 @@
-## Data archive website for Two-Element Interferometer located at Gauribidanur radio observatory (RRI). Operational between 180-359 MHz with sampling rate of 1.25GS/s.
+# Data archive website for Two-Element Interferometer located at Gauribidanur radio observatory (RRI). Operational between 180-359 MHz with sampling rate of 1.25GS/s.
 
 Procedure to bring up the data archive webpage
 ----------------------------------------------
 
-# Clone the github repository
+## Clone the github repository
 
 gitclone https://github.com/gnpaneendra/twin_webpage.git ~/.
 
-# Directory structure
+## Directory structure
 
 twin_webpage/
 		/twin_webpage.htm
@@ -20,7 +20,7 @@ twin_webpage/
 		                 /twin_data_process_combined.py
 		                 /twin_data_process_raw.py
 
-# Details on files
+## Details on files
 
 1. twin_webpage.htm: This file contains the deisgn of the webpage and interactions (front-end). languages(html, java). Contained path for the combined data (SOLAR_DATA_GBD/combined/) and raw data (SOLAR_DATA_GBD/raw/)
 2. twin_webpage.py: This files suports in the zipping the data and forwarding it (back-end). languages(python). Contains the path for the main data directory in this case (SOLAR_DATA_GBD) and twin_webpage.htm
@@ -30,15 +30,15 @@ twin_webpage/
 6. twin_data_process_combined.py: Python program to process combined file (single csv)
 7. twin_data_process_raw.py: Python program to process the raw individual files (multiple CSV files)
 
-# Addition python packages required to be downloaded
+## Addition python packages required to be downloaded
 
 flask
 
-# Initiating/Running the webserve
+## Initiating/Running the webserve
 
 Through VENV and CONDA
 
-# VENV
+## VENV
 
 python3 -m venv ~/venv_twinweb
 
@@ -64,7 +64,7 @@ To re-enter the screen
 
 screen -R twin_webpage
 
-# CONDA
+## CONDA
 
 conda create --name twinweb
 
